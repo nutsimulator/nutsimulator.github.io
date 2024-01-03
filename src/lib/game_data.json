@@ -1,0 +1,103 @@
+{
+	"tickrate": 1,
+	"buildings": [
+		{
+			"name": "Nut Kid",
+			"nutIncrement": 0.1,
+			"price": 15,
+			"priceMultiplier": 1.1,
+			"colour": "#EB9532"
+		},
+		{
+			"name": "Nut Boy",
+			"nutIncrement": 1,
+			"price": 50,
+			"priceMultiplier": 1.1,
+			"colour": "#F39C12"
+		},
+		{
+			"name": "Nut Man",
+			"nutIncrement": 8,
+			"price": 1000,
+			"priceMultiplier": 1.1,
+			"colour": "#87D37C"
+		},
+		{
+			"name": "Nut Farm",
+			"nutIncrement": 47,
+			"price": 13000,
+			"priceMultiplier": 1.1,
+			"colour": "#26A65B"
+		},
+		{
+			"name": "Nut Factory",
+			"nutIncrement": 260,
+			"price": 150000,
+			"priceMultiplier": 1.1,
+			"colour": "#03C9A9"
+		},
+		{
+			"name": "Nut Bank",
+			"nutIncrement": 1400,
+			"price": 1400000,
+			"priceMultiplier": 1.1,
+			"colour": "#5C97BF"
+		},
+		{
+			"name": "Nut Empire",
+			"nutIncrement": 7800,
+			"price": 20000000,
+			"priceMultiplier": 1.1,
+			"colour": "#1F3A93"
+		},
+		{
+			"name": "World Nut Control",
+			"nutIncrement": 44000,
+			"price": 330000000,
+			"priceMultiplier": 1.1,
+			"colour": "#9B59B6"
+		},
+		{
+			"name": "Galactic Nut Reign",
+			"nutIncrement": 260000,
+			"price": 5100000000,
+			"priceMultiplier": 1.1,
+			"colour": "#F62459"
+		},
+		{
+			"name": "Deez Nut Guy",
+			"nutIncrement": 1600000,
+			"price": 75000000000,
+			"priceMultiplier": 1.1,
+			"colour": "#F22613"
+		},
+		{
+			"name": "Time Travelling Nuts",
+			"nutIncrement": 10000000,
+			"price": 1000000000000,
+			"priceMultiplier": 1.1,
+			"colour": "#96281B"
+		},
+		{
+			"name": "Universal Nut Domination",
+			"nutIncrement": 65000000,
+			"price": 40000000000000,
+			"priceMultiplier": 1.1,
+			"colour": "#72231a"
+		},
+		{
+			"name": "Nut God",
+			"nutIncrement": 430000000,
+			"price": 170000000000000,
+			"priceMultiplier": 1.1,
+			"colour": "#2d0e0b"
+		},
+		{
+			"name": "Nut Afterlife",
+			"nutIncrement": 2900000000,
+			"price": 2000000000000000,
+			"priceMultiplier": 1.1,
+			"colour": "black"
+		}
+	]
+}
