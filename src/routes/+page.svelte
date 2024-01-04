@@ -51,23 +51,24 @@
 
 		<ClickableNut />
 
-		<div class="text-right text-4xl">Upgrades
+		<div class="text-right text-4xl">
+			Upgrades
 			<div class="flex justify-end text-base">
 				<div class="flex flex-wrap justify-center gap-2 flex-col">
-				{#each game_data.upgrades as upgrade}
+					{#each game_data.upgrades as upgrade}
 						<Upgrade
-						name={upgrade.name}
-						price={upgrade.price}
-						priceMultiplier={upgrade.priceMultiplier}
-						requiredBuilding={buildingElems[upgrade.requiredBuilding]}
-						colour={upgrade.colour}
-						count={0}
-						maxCount={upgrade.maxCount}
-					/>
-				{/each}
+							name={upgrade.name}
+							price={upgrade.price}
+							priceMultiplier={upgrade.priceMultiplier}
+							requiredBuilding={buildingElems[upgrade.requiredBuilding]}
+							colour={upgrade.colour}
+							count={0}
+							maxCount={upgrade.maxCount}
+						/>
+					{/each}
+				</div>
 			</div>
-		</div>	
-	</div>
+		</div>
 	</div>
 
 	<div class="flex justify-center flex-col">
