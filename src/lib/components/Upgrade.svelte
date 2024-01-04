@@ -3,6 +3,7 @@
 <script lang="ts">
 	import { nuts } from '../stores';
 	import Building from './Building.svelte';
+	import Button from './Button.svelte';
 
 	export let name: string;
 	export let price: number;
@@ -33,18 +34,9 @@
 </script>
 
 {#if unlocked}
-	<button
-		on:click={buy}
-		class="py-3 px-5 rounded-lg cursor-pointer select-none [box-shadow:0_5px_#999]
-        text-white
-        transition-all duration-75
-        hover:brightness-90
-        active:translate-y-[4px] active:[box-shadow:0_1px_#666] active:brightness-75
-        {$nuts < price && '!brightness-75'}"
-		style:background-color={colour}
-	>
+	<Button onClick={buy} disabled={$nuts < price} {colour}>
 		<div class="font-bold">{name} ({count})</div>
 		<div>({requiredBuilding.name} * 2 nuts/sec)</div>
 		<div>-{price} nuts</div>
-	</button>
+	</Button>
 {/if}
