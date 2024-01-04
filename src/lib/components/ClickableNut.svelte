@@ -70,8 +70,9 @@
 		{Math.round($nuts * 1000) / 1000} nuts
 	</div>
 	<div
-		class="inline-block h-40 w-40 select-none transition-transform
-		bg-[url('/nut.png')] bg-contain bg-no-repeat bg-center"
+		class="inline-block h-40 w-40 select-none
+		bg-[url('/nut.png')] bg-contain bg-no-repeat bg-center
+		transition-transform"
 		style:transform={`scale(${zoom})`}
 		on:mousedown={(e) => pressNut('mouse', e.button.toString())}
 		on:mouseup={(e) => releaseNut('mouse', e.button.toString())}
