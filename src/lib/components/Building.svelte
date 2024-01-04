@@ -40,6 +40,6 @@
 	>
 		<div class="font-bold">{name} ({count})</div>
 		<div>(+{nutIncrement} nuts/sec)</div>
-		<div>-{price.toPrecision(2)} nuts</div>
+		<div>-{price} nuts</div>
 	</button>
 {/if}
