@@ -44,6 +44,23 @@
 		if (sourceSet.size == 0) pressingSources.delete(source);
 		updateSources();
 	}
+
+	let zoom = 1;
+
+	$: {
+		const zoomDecay = 0.5;
+		let extraZoom = 0.2;
+		zoom = 1;
+
+		const presses = Array.from(pressingSources, ([key, value]) =>
+			value instanceof Set ? Array.from(value) : value
+		).flat();
+
+		for (const _ of presses) {
+			zoom -= extraZoom;
+			extraZoom *= zoomDecay;
+		}
+	}
 </script>
 
 <svelte:window on:keydown={onKeyDown} on:keyup={onKeyUp} />
@@ -54,8 +71,8 @@
 	</div>
 	<div
 		class="inline-block h-40 w-40 select-none transition-transform
-		bg-[url('/nut.png')] bg-contain bg-no-repeat bg-center
-		{pressingSources.size > 0 && 'scale-[.8]'}"
+		bg-[url('/nut.png')] bg-contain bg-no-repeat bg-center"
+		style:transform={`scale(${zoom})`}
 		on:mousedown={(e) => pressNut('mouse', e.button.toString())}
 		on:mouseup={(e) => releaseNut('mouse', e.button.toString())}
 		on:mouseleave={(e) => releaseNut('mouse')}
