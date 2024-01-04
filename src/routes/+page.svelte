@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 
 	import Building from '$lib/components/Building.svelte';
+	import Upgrade from '$lib/components/Upgrade.svelte';
 	import ClickableNut from '../lib/components/ClickableNut.svelte';
 
 	import { nuts } from '$lib/stores';
@@ -50,7 +51,23 @@
 
 		<ClickableNut />
 
-		<div class="text-right">Upgrades</div>
+		<div class="text-right text-4xl">Upgrades
+			<div class="flex justify-end text-base">
+				<div class="flex flex-wrap justify-center gap-2 flex-col">
+				{#each game_data.upgrades as upgrade}
+						<Upgrade
+						name={upgrade.name}
+						price={upgrade.price}
+						priceMultiplier={upgrade.priceMultiplier}
+						requiredBuilding={buildingElems[upgrade.requiredBuilding]}
+						colour={upgrade.colour}
+						count={0}
+						maxCount={upgrade.maxCount}
+					/>
+				{/each}
+			</div>
+		</div>	
+	</div>
 	</div>
 
 	<div class="flex justify-center flex-col">

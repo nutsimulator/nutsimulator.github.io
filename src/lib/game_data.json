@@ -99,5 +99,15 @@
 			"priceMultiplier": 1.1,
 			"colour": "black"
 		}
+	],
+	"upgrades": [
+		{
+			"name": "Nut Boy Upgrade",
+			"price": 100,
+			"priceMultiplier": 5,
+			"requiredBuilding": "Nut Boy",
+			"maxCount": 5,
+			"colour": "#F39C12"
+		}
 	]
 }
